@@ -1,0 +1,52 @@
+body {
+  background-color: white;
+  font-family: monospace, cursive;
+  text-align: center;
+  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+}
+
+header {
+  background-color: #000000; 
+  margin: auto -16px;
+  padding: 16px 32px;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  box-shadow: 0 10px 10px 0 rgba(26, 25, 25, 0.3);
+}
+
+h1{
+  padding-bottom: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.box {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -ms-transition: transform 0.8s;
+  -o-transition: transform 0.8s;
+}
+.box:active {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.icon {
+  font-size: 35px;
+  color: #ffffff;
+}
